@@ -1,0 +1,39 @@
+.movie-container {
+    color: rgb(133, 122, 122);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #c5c6c7;
+    /* position: fixed; */
+  }
+  
+  ul .movie-list-container {
+    position: absolute;
+    top: 40%;
+  }
+
+  .poster-container {
+    height: 100%;
+    width: 100%;
+    padding: 2rem 2rem;
+  }
+
+  .search-button-browse {
+    margin-top: 10.2%;
+    width: 48%;
+    margin-left: 20.5%;
+  }
+  
+  .no-result {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .no-result > h1 {
+    font-weight: 100;
+  }
+  

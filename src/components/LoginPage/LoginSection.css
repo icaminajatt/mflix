@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  padding: 0 2rem;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 4rem;
+  align-items: center;
+  transition: 0.3s ease;
+  z-index: 2;
+  color: inherit;
+}
+
+.graylogo {
+  /* width: 20%;
+  height: 70%; */
+  width: 10rem;
+  height: 4rem;
+  cursor: pointer;
+  margin: 30px 20px;
+  filter: grayscale(1);
+}
+
+.colorlogo {
+  /* width: 20%;
+  height: 70%; */
+  width: 10rem;
+  height: 4rem;
+  cursor: pointer;
+  margin: 30px 20px;
+  filter: grayscale(0);
+  transition: 3s;
+}
+
+body {
+  background-color: #000;
+}
+
+.content {
+  font-family: "Karla";
+  color: #d8d8d8;
+  margin-top: 35%;
+  margin-left: 150px;
+}
+
+h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.colorh1 {
+  color: #66fcf1;
+  transition: 3s;
+}
+
+.nocolor {
+  color: #c5c6c7;
+}
+
+p {
+  font-size: 15px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.gray {
+  filter: grayscale(1);
+  margin-left: 175px;
+  width: 500px;
+  height: 688px;
+}
+
+.color {
+  filter: grayscale(0);
+  transition: 3s;
+  margin-left: 175px;
+  width: 500px;
+  height: 688px;
+}
+
+/* BUTTON */
+
+.login {
+  position: relative;
+  height: 60px;
+  width: 200px;
+  border: none;
+  outline: none;
+  color: white;
+  background: #111;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+}
+
+@media screen and (max-width: 960px) {
+  .graylogo {
+    margin-top: 30px;
+    margin-left: 5px;
+  }
+
+  .colorlogo {
+    margin-top: 30px;
+    margin-left: 5px;
+  }
+
+  main {
+    flex-direction: column-reverse;
+  }
+
+  .content {
+    margin-left: 25%;
+    margin-top: 100%;
+    flex-basis: 100%;
+  }
+
+  .color {
+    width: 50%;
+    position: relative;
+    top: 40%;
+    right: 50%;
+    height: 50%
+  }
+
+  .gray {
+    width: 50%;
+    position: relative;
+    top: 40%;
+    right: 50%;
+    height: 50%
+  }
+
+  .colorh1 {
+    margin-bottom: 10%;
+    margin-bottom: 15%;
+  }
+
+  .nocolor {
+    margin-bottom: 10%;
+    margin-bottom: 15%;
+  }
+
+  .login {
+    position: relative;
+    top: 10%;
+    left: 20%;
+  }
+}

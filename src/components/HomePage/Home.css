@@ -1,0 +1,12 @@
+.poster {
+  height: 100vh;
+  background-image: url("../../media/background.png");
+  /* background-position: top; */
+  position: fixed;
+  width: 100%;
+}
+
+.homeh1 {
+  color: white;
+  /* margin-top: 15%; */
+}

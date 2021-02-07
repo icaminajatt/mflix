@@ -1,0 +1,393 @@
+@font-face {
+  font-family: Silent;
+  src: url("../../../media/Silent-Landfield.ttf");
+}
+
+.navbarhome {
+  position: fixed;
+  top: 0;
+  display: flex;
+  padding: 0 2rem;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 5rem;
+  align-items: center;
+  transition: 0.3s ease;
+  z-index: 2;
+  color: inherit;
+}
+
+.navbarhomespread {
+  position: fixed;
+  top: 0;
+  display: flex;
+  padding: 0 2rem;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 13rem;
+  align-items: center;
+  transition: 0.3s ease;
+  z-index: 2;
+  color: inherit;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1f2833;
+  height: 90%;
+  width: 100%;
+}
+
+/* .logo {
+  filter: grayscale(1);
+} */
+
+.left-side {
+  display: flex;
+  align-items: center;
+}
+
+.navbar.scrolled {
+  background-color: var(--bg-dark);
+}
+.menu {
+  display: none;
+}
+
+.navbar a.navbar-logo {
+  color: inherit;
+}
+
+.logo.scrolled {
+  color: #fff;
+}
+
+.icons {
+  display: none;
+}
+
+.logohome {
+  width: 10rem;
+  height: 4rem;
+  cursor: pointer;
+  margin: 30px 20px;
+  filter: grayscale(0);
+}
+
+.logohomespread {
+  width: 10rem;
+  height: 4rem;
+  cursor: pointer;
+  margin: 30px 20px;
+  filter: grayscale(0);
+}
+
+.logoM {
+  width: 5%;
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  transition: 2s;
+}
+
+.no {
+  display: none;
+}
+
+.line {
+  border-left: 2px solid white;
+  height: 50%;
+  position: absolute;
+  left: 26%;
+  top: 38%;
+  margin-left: -3px;
+  transition: 2s;
+}
+
+.no {
+  display: none;
+}
+
+.info-content {
+  color: white;
+  width: 30%;
+  position: absolute;
+  top: 30%;
+  left: 27%;
+}
+
+.info-content h2 {
+  font-family: Silent;
+  font-size: 35px;
+  font-weight: lighter;
+}
+.info-content p {
+  color: #c5c6c7;
+  font-size: 12px;
+}
+.navbar-nav {
+  display: flex;
+  color: inherit;
+  align-items: center;
+}
+
+.navbar-nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav a {
+  padding: 0.5rem 1.5rem;
+  border: solid 1px transparent;
+  font-size: 0.9rem;
+  transition: 0.3s;
+  color: #fff;
+  font-weight: 300;
+}
+
+.navbar-nav a:hover {
+  border-bottom: solid 1px #fff;
+  color: #fff;
+}
+
+.navbar-nav ul.socials {
+  display: none;
+}
+
+/* Nav Links */
+
+.nav-item {
+  height: 50px;
+  display: inline-block;
+}
+
+.nav-links {
+  color:white;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+}
+
+.nav-links:hover {
+  border-bottom: 4px solid #fff;
+  transition: all 0.2s ease-out;
+}
+
+.nav-menu {
+  position: absolute;
+  top: 20%;
+  left: 70%;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  /* .navbarhomespread {
+    display: none;
+  } */
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    justify-content: center;
+  }
+
+  .nav-menu.active {
+    background: #44546a;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    top: 0;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+    color: #fff;
+  }
+
+  .nav-links:hover {
+    background-color: #fff;
+    color: #242424;
+    border-radius: 0;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 29%;
+    left: 70%;
+    /* transform: translate(-100%, 60%); */
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: white;
+    font-size: 2rem;
+  }
+
+  .fa-bars {
+    color: white;
+    font-size: 2rem;
+  }
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #fff;
+    padding: 14px 20px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-out;
+  }
+
+  .nav-links-mobile:hover {
+    background: #fff;
+    color: #242424;
+    transition: 250ms;
+  }
+}
+/* .account-section {
+  display: flex;
+  align-items: center;
+} */
+
+/* @media screen and (max-width: 1500px) {
+  .navbar.scrolled {
+    background-color: transparent;
+    z-index: 1;
+  }
+
+  .logo.scrolled {
+    color: inherit;
+  }
+
+  .navbar {
+    height: 5rem;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .fa-stream {
+    display: flex;
+    font-size: 1.5rem;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .fa-times {
+    border-radius: 100%;
+    color: #fff;
+    z-index: 2;
+  }
+
+  .menu:hover {
+    cursor: pointer;
+  }
+
+  .icons {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .nav-item {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2rem;
+  }
+
+  .navbar-nav {
+    position: absolute;
+    top: 0;
+    flex-direction: column;
+    right: -100%;
+    width: 80vw;
+    height: 100vh;
+    background-color: var(--blue);
+    color: #fff;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .focus-navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(51, 51, 51, 0.8);
+    transition: all 0.3s ease;
+    display: none;
+  }
+
+  .focus {
+    display: flex;
+    transition: all 0.1s ease;
+  }
+
+  .active {
+    transition: all 0.3s ease;
+    right: 0;
+  }
+
+  .navbar-nav ul {
+    height: 30%;
+    flex-direction: column;
+  }
+  /* 
+  .navbar a {
+    display: flex;
+    font-weight: 400;
+    align-items: center;
+    font-size: 0.8rem;
+  } */
+
+/* .navbar-nav ul.socials {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding-left: 2rem;
+    margin: 3rem 0 0 0;
+    height: 40px;
+    align-items: center;
+  }
+
+  .nav-social {
+    font-size: 1rem;
+  }
+} */
